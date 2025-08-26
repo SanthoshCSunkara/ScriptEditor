@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "script-editor-client-side-solution",
+    "id": "3d247608-fe15-498d-a39f-1d4e745fb348",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "SanthoshCs",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Script Editor description"
+      },
+      "longDescription": {
+        "default": "Script Editor description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "script-editor Feature",
+        "description": "The feature that activates elements of the script-editor solution.",
+        "id": "e5dcf1f2-029d-47ac-8a02-4e1891fbf937",
+        "version": "1.0.0.0",
+        "componentIds": [
+      "99dbe558-524a-4170-a393-d9b3d98b626f"
+        ]
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/script-editor.sppkg"
+  }
+}

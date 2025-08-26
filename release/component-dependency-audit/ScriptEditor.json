@@ -1,0 +1,31 @@
+{
+  "bundles": {
+    "script-editor-web-part": {
+      "dependencies": [],
+      "asyncChunks": {
+        "pnp-property-controls": {
+          "asyncComponentDependencies": [
+            {
+              "componentId": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+              "componentName": "react",
+              "componentVersion": "17.0.2",
+              "isDirectDependency": true
+            },
+            {
+              "componentId": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+              "componentName": "react-dom",
+              "componentVersion": "17.0.2",
+              "isDirectDependency": true
+            },
+            {
+              "componentId": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a",
+              "componentName": "@microsoft/sp-lodash-subset",
+              "componentVersion": "1.19.0",
+              "isDirectDependency": true
+            }
+          ]
+        }
+      }
+    }
+  }
+}

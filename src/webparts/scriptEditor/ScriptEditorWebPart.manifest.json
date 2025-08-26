@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "99dbe558-524a-4170-a393-d9b3d98b626f",
+  "alias": "ScriptEditorWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+   
+  "supportsFullBleed": false,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
+    "group": { "default": "Advanced" },
+    "title": { "default": "ScriptEditor" },
+    "description": { "default": "Execute approved HTML/JS/CSS with isolation/allowlist." },
+    "officeFabricIconFontName": "Script",
+    "properties": {
+        "markup": "<div style='padding:8px;border:1px dashed #ccc'>Hello from Script Editor</div>",
+        "useIframe": true,
+        "allowInlineScript": false,
+        "domSanitize": true,
+        "cspStrict": true,
+        "allowedDomains": "self, *.sharepoint.com"
+    }
+  }]
+}

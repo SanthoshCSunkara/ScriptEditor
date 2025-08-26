@@ -1,0 +1,75 @@
+{
+  "id": "99dbe558-524a-4170-a393-d9b3d98b626f",
+  "alias": "ScriptEditorWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "supportsFullBleed": false,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart",
+    "TeamsPersonalApp",
+    "TeamsTab",
+    "SharePointFullPage"
+  ],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Advanced"
+      },
+      "title": {
+        "default": "ScriptEditor"
+      },
+      "description": {
+        "default": "Execute approved HTML/JS/CSS with isolation/allowlist."
+      },
+      "officeFabricIconFontName": "Script",
+      "properties": {
+        "markup": "<div style='padding:8px;border:1px dashed #ccc'>Hello from Script Editor</div>",
+        "useIframe": true,
+        "allowInlineScript": false,
+        "domSanitize": true,
+        "cspStrict": true,
+        "allowedDomains": "self, *.sharepoint.com"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "internalModuleBaseUrls": [
+      "<!-- PATH TO CDN -->"
+    ],
+    "entryModuleId": "script-editor-web-part",
+    "scriptResources": {
+      "script-editor-web-part": {
+        "type": "path",
+        "path": "script-editor-web-part.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b",
+        "version": "1.19.0"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0",
+        "version": "1.19.0"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db",
+        "version": "1.19.0"
+      },
+      "@microsoft/sp-loader": {
+        "type": "component",
+        "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f",
+        "version": "1.19.0"
+      },
+      "PropertyControlStrings": {
+        "type": "path",
+        "path": "PropertyControlStrings_default.js"
+      }
+    }
+  }
+}

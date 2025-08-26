@@ -1,0 +1,13 @@
+﻿# Node / tooling
+node_modules/
+dist/
+lib/
+temp/
+.cache/
+*.log
+.vscode/
+
+# SPFx build outputs (keep sppkg)
+# sharepoint/solution/debug/ and temp deploy
+sharepoint/solution/debug/
+temp_deploy/
